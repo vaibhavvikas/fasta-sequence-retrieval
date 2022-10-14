@@ -11,3 +11,5 @@ navigation:
     link: ./
   - name: Authors
     link: ./authors.html
+  - name: Contributing
+    link: ./contributing.html

@@ -31,7 +31,7 @@ def download_seq_data(acc_numbers):
     driver = ncbi_sequence_retrieval.setup_selenium()
     
     for accession_number in acc_numbers:
-        print("Loading Accerssion Number:", accession_number)
+        print("Loading Accession Number:", accession_number)
         seq_details, err = ncbi_sequence_retrieval.download_sequence_info(accession_number, driver)
         if not err and seq_details["amino_acid_seq"] != "":
             seq_details["accession_number"] = accession_number

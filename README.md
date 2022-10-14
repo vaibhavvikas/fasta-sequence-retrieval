@@ -1,6 +1,6 @@
 ## fasta_sequence_retrieval
 
-Python Project that can be used to extract their amino acid from their accession number from the ncbi portal. Sample resuklts in `output` directory.
+Python Project that can be used to extract their amino acid from their accession number from the ncbi portal. Sample results in `output` directory.
 
 ## Features
 

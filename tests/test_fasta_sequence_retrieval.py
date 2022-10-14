@@ -5,7 +5,7 @@
 
 import unittest
 
-from fasta_sequence_retrieval import fasta_sequence_retrieval
+from fasta_sequence_retrieval import __main__
 
 
 class TestFasta_sequence_retrieval(unittest.TestCase):

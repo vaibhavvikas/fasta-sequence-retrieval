@@ -8,9 +8,6 @@ from setuptools import setup, find_packages
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.md') as history_file:
-    history = history_file.read()
-
 project_dir = Path(__file__).parent
 
 setup(
@@ -27,10 +24,10 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10'
     ],
-    description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    description="Python Project that can be used to extract their amino acid from their accession number from the ncbi portal. Sample resuklts in `output` directory.",
     install_requires=project_dir.joinpath('requirements.txt').read_text().split("\n"),
-    license="MIT license",
-    long_description=readme + '\n\n' + history,
+    license="BSD license",
+    long_description=readme,
     include_package_data=True,
     keywords='fasta_sequence_retrieval',
     name='fasta_sequence_retrieval',
@@ -38,7 +35,7 @@ setup(
     project_dir={"":"'fasta_sequence_retrieval'"},
     test_suite='tests',
     tests_require=project_dir.joinpath('requirements.txt').read_text().split("\n"),
-    url='https://github.com/vaibhavvikas/fasta_sequence_retrieval',
+    url='https://github.com/vaibhavvikas/fasta-sequence-retrieval',
     version='0.1.0',
     zip_safe=False,
 )
