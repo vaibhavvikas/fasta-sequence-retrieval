@@ -1,0 +1,11 @@
+accession_number,locus,definition,organism,host,country,collection_date,protein_id
+AY593850.1,8170 bp,"Foot-and-mouth disease virus SAT 3 isolate sat3-2sa iso27, complete genome.",Foot-and-mouth disease virus SAT 3,,South Africa,,AAT01793.1
+AY593851.1,8164 bp,"Foot-and-mouth disease virus SAT 3 isolate sat3-3bech iso29, complete genome.",Foot-and-mouth disease virus SAT 3,,Botswana,,AAT01794.1
+AY593852.1,8164 bp,"Foot-and-mouth disease virus SAT 3 isolate sat3-3kenya iso22, complete genome.",Foot-and-mouth disease virus SAT 3,,Kenya,,AAT01795.1
+MH053352.1,8160 bp,"Foot-and-mouth disease virus SAT 3 isolate ZIM/P27/90 (DSA-31), complete genome.",Foot-and-mouth disease virus SAT 3,Syncerus caffer,Zimbabwe: Dande Safari Park,20-Oct-1990,AWC08725.1
+MH845413.2,8131 bp,"Foot-and-mouth disease virus O strain O/VN1/2014, complete genome.",Foot-and-mouth disease virus O,swine,Viet Nam: Lao Cai,2014,AYV64547.2
+MH891503.1,7787 bp,"Foot-and-mouth disease virus O strain O/VIT/8338/2017 polyprotein gene, complete cds.",Foot-and-mouth disease virus O,bovine,Viet Nam,Apr-2017,AYE89269.1
+NC_039210.1,8201 bp,"Foot-and-mouth disease virus O isolate o6pirbright iso58, complete genome.",Foot-and-mouth disease virus O,,United Kingdom,,YP_009513028.1
+X00429.1,7107 bp,FMDV RNA of primary translation product (Foot and Mouth Disease Virus).,Foot-and-mouth disease virus,,,,CAA25127.1
+X00871.1,7804 bp,Foot and mouth disease virus (FMDV-O1K) RNA for polyprotein precursor.,Foot-and-mouth disease virus,,,,CAA25415.1
+X74812.1,7820 bp,Foot and Mouth Disease Virus A L-fragment of RNA genome.,Foot-and-mouth disease virus A,,,,CAA52812.1

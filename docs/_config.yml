@@ -1,0 +1,13 @@
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+color-scheme: auto
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+
+navigation:
+  - name: fasta_sequence_retrieval
+    link: ./
+  - name: Authors
+    link: ./authors.html
