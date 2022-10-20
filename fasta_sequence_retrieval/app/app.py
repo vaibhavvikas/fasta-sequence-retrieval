@@ -13,12 +13,13 @@ def load_all_nucleotides():
     acc_numbers = set()
 
     seq_dir = "data/sequence/"
-    for sequence_files in os.listdir(seq_dir):
-        acc_numbers = acc_numbers.union(extract_accession_from_seq_files(seq_dir + sequence_files))
+    for sequence_file in os.listdir(seq_dir):
+        if sequence_file.endswith(".txt"):
+            acc_numbers = acc_numbers.union(extract_accession_from_seq_files(seq_dir + sequence_file))
 
-    for acc_files in os.listdir("data/"):
-        if acc_files.endswith(".txt"):
-            acc_numbers = acc_numbers.union(extract_acc_from_file("data/" + acc_files))
+    for acc_file in os.listdir("data/"):
+        if acc_file.endswith(".txt"):
+            acc_numbers = acc_numbers.union(extract_acc_from_file("data/" + acc_file))
     
     return sorted(list(acc_numbers))
 
