@@ -76,6 +76,23 @@ def get_definition(data: list[str]):
     return " ".join(definition)
 
 
+def get_organism_description(data: list[str]):
+    organism = []
+    flag = False
+    for line in data:
+        if flag:
+            if not line.split(" ")[0].isupper():
+                organism.extend(line.split())
+            else:
+                break
+        
+        if line.startswith("ORGANISM"):
+            organism.extend(line.split(" ")[1:])
+            flag = True
+
+    return " ".join(organism)
+
+
 def get_source_info(data: list[str]):
     organism = ""
     host = ""
@@ -104,6 +121,7 @@ def get_details(source) -> dict():
     details = dict()
     details["locus"] = get_locus(data)
     details["definition"] = get_definition(data)
+    details["organism_description"] = get_organism_description(data)
     details["organism"], details["host"], details["country"], \
     details["collection_date"], details["protein_id"] = get_source_info(data)
     details["amino_acid_seq"] = get_amino_acid_sequence(data)

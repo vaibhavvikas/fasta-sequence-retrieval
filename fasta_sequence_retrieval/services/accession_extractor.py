@@ -6,8 +6,8 @@ def extract_accession_from_seq_files(filename):
     nucleotides = set()
     for line in data:
         if line.startswith(">"):
-            line_data = line.split(" ")
-            nucleotide = line_data[0][1:]
+            line_data = line.split(" ")[0][1:].split(":")
+            nucleotide = line_data[0]
             nucleotides.add(nucleotide)
 
     return nucleotides

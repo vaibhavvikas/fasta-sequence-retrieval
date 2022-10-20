@@ -30,8 +30,10 @@ def download_seq_data(acc_numbers):
 
     driver = ncbi_sequence_retrieval.setup_selenium()
     
-    for accession_number in acc_numbers:
-        print("Loading Accession Number:", accession_number)
+    print("Accession Numbers Retrieved: ", len(acc_numbers))
+
+    for index, accession_number in enumerate(acc_numbers):
+        print(f"Loading Accession Number {index+1}: {accession_number}")
         seq_details, err = ncbi_sequence_retrieval.download_sequence_info(accession_number, driver)
         if not err and seq_details["amino_acid_seq"] != "":
             seq_details["accession_number"] = accession_number
@@ -45,8 +47,8 @@ def download_seq_data(acc_numbers):
 
     # Save results in /output dir
     utils.save_text_file("\n".join(amino_acid_seq_data), "amino_acid_seq_data.txt")
-    fields = ["accession_number", "locus", "definition", "organism", "host", "country", "collection_date", "protein_id"]
+    fields = ["accession_number", "locus", "definition", "organism", "organism_description", "host", "country", "collection_date", "protein_id"]
     utils.save_dict_to_csv(fields, seq_details_data, "seq_details.csv")
 
-    utils.save_text_file("\n".join(finished), "finished.csv")
-    utils.save_text_file("\n".join(missed), "missed.csv")
+    utils.save_text_file("\n".join(finished), "finished.txt")
+    utils.save_text_file("\n".join(missed), "missed.txt")
