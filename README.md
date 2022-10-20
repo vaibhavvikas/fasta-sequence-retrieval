@@ -15,9 +15,8 @@ Python Project to extract the amino acid sequences using the nucleotide accessio
 ## Project Setup
 1. Install python version >= 3.9
 2. Clone the repository.
-3. Replace the chromedriver inside `/driver` with the one respective to your chrome version. Follow [selenium.dev](https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/) to get the version respective to the chrome browser you have installed.
-4. Open cmd/terminal and run the following command to install dependencies `pip install -e .`
-5. Your output will be generated inside the output directory. Please test with small numbers of seq first to make sure you're getting what is expected.
+3. Open cmd/terminal and run the following command to install dependencies `pip install -e .`
+4. Your output will be generated inside the output directory. Please test with small numbers of seq first to make sure you're getting what is expected.
 
 ## Credits
 

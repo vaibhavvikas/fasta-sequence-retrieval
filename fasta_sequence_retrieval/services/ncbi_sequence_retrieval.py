@@ -2,10 +2,12 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from fasta_sequence_retrieval.utils.utils import format_text
 
+import chromedriver_autoinstaller
 import time
 
 
 URL = "https://www.ncbi.nlm.nih.gov/nuccore/"
+chromedriver_autoinstaller.install()
 
 
 def setup_selenium():
@@ -13,7 +15,7 @@ def setup_selenium():
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--incognito')
     options.add_argument('--headless')
-    driver = webdriver.Chrome("driver/chromedriver", chrome_options=options)
+    driver = webdriver.Chrome(chrome_options=options)
     return driver
 
 
